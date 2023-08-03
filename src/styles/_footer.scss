@@ -1,0 +1,35 @@
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        padding-bottom: 300px;
+    }
+    &__production {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: 1000px) {
+            margin-top: 50px;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                width: 25px;
+                object-fit: cover;
+                max-height: 25px;
+                min-height: 25px;
+            }
+        }
+    }
+
+    &__socialMedia {
+        display: flex;
+        gap: 20px;
+    }
+}

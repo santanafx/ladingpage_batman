@@ -1,4 +1,5 @@
 @use "advertise";
+@use "menu";
 
 * {
     margin: 0;
@@ -39,6 +40,12 @@ body {
     margin-bottom: 16px;
 }
 
+.text--subText {
+    @include text(1.5rem);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .text--description {
     @include text(0.9rem);
     color: rgb(184, 184, 184);
@@ -51,4 +58,5 @@ body {
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
+    cursor: pointer;
 }

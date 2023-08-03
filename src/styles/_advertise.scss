@@ -1,0 +1,42 @@
+.advertise {
+    background-image: url(../images/batmanBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    @media (max-width: 1024px) {
+        background-size: contain;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 100px;
+        padding-top: 170px;
+
+        .title {
+            margin-bottom: 16px;
+        }
+
+        .title--subTitle {
+            margin-bottom: 36px;
+        }
+
+        &__description {
+            margin-bottom: 38px;
+        }
+
+        .text {
+            margin-bottom: 16px;
+        }
+
+        .text--description {
+            margin-bottom: 48px;
+            margin-right: 32px;
+            a {
+                color: white;
+            }
+        }
+    }
+}

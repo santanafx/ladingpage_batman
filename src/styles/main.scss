@@ -62,3 +62,33 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.menu__container__iconMenu--is-active {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: black;
+    .text--subText {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .button {
+        padding: 10px 15px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            outline: white solid 3px;
+        }
+    }
+}

@@ -8,6 +8,45 @@
         justify-content: space-between;
         align-items: center;
         height: 120px;
+        position: relative;
+
+        &__options {
+            @media (max-width: 1350px) {
+                display: none;
+            }
+        }
+
+        &__iconMenu {
+            display: none;
+
+            @media (max-width: 1350px) {
+                display: block;
+                border: 3px solid white;
+                padding: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    transition: 0.5s;
+                    border: 3px solid grey;
+                    span {
+                        border-bottom: 3px solid grey;
+                    }
+                }
+                span {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    display: block;
+                    width: 50px;
+                    border-bottom: 3px solid white;
+                }
+            }
+        }
+
+        &__dropdown {
+            display: none;
+        }
     }
 
     .text--subText {
